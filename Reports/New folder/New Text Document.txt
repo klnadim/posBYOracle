@@ -1,0 +1,17 @@
+
+CREATE TABLE BANK_TRANSACTION
+(
+  SL_NO                NUMBER,
+  BANK_TRADE           VARCHAR2(50 BYTE),
+  V_DATE               DATE,
+  DESCRIPTION          VARCHAR2(50 BYTE),
+  MODE_OF_TRANSACTION  VARCHAR2(50 BYTE),
+  CHECK_NO             VARCHAR2(50 BYTE),
+  TRADE_BY             VARCHAR2(50 BYTE),
+  BALANCE              NUMBER,
+  DEPOSIT              NUMBER,
+  WITHDRAW             NUMBER,
+  AFTER_BAL            NUMBER,
+  BANK_NAME            VARCHAR2(200 BYTE),
+  ACCOUNT_NO           VARCHAR2(200 BYTE)
+)

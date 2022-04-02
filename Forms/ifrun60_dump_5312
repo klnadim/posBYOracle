@@ -1,0 +1,38 @@
+[03/06/17 17:49:13 Azores Standard Time]::Client Status [ConnId=0, PID=5312]
+	>> ERROR: Abnormal termination, Error Code: C0000005 ACCESS_VIOLATION
+
+======================= STACK DUMP =======================
+
+Fault address:  6022EA57 01:0002DA57
+Module: D:\orant\BIN\CORE40.dll
+
+System Information:
+Operating System: Windows NT Version 6.1 Build 7601 Service Pack 1
+Command line: "D:\orant\BIN\ifrun60.EXE" D:\I-POS_ADV_3_0\Forms\Login.fmx
+FORM/BLOCK/FIELD: BANK_TRANSACTION:BANK_TRANSACTION1.BANK_TRADE
+Last Trigger: WHEN-NEW-FORM-INSTANCE - (Successfully Completed)
+Msg: <NULL>
+Last Builtin: FIRST_RECORD - (Successfully Completed)
+
+Registers:
+EAX:00041854
+EBX:0147F902
+ECX:00000002
+EDX:0147F940
+ESI:04821AF4
+EDI:01481D4C
+CS:EIP:001B:6022EA57
+SS:ESP:0023:0012E3CC  EBP:0012E3D8
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+
+Call stack:
+Address   Frame
+6022EA57  0012E3D8  ssltssigmask
+602351B6  0012E404  ssltssigmask
+5D15C2BA  0012E41C  simfr
+5DF59422  0012E43C  exiterr
+5DF58233  0012E440  exiterr
+014A1AB8  0012E444  0000:00000000 
+
